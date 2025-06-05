@@ -1,0 +1,59 @@
+.behind-the-scenes {
+    background-color: #000;
+    padding: 4rem 1rem;
+    color: #ff6b00;
+    text-align: center;
+}
+
+.behind-the-scenes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.slider-container {
+    max-width: 800px; /* Increased width */
+    margin: 0 auto;
+    border: 4px solid #ff6b00;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255, 107, 0, 0.4);
+    background: #000;
+}
+
+/* Target the slider track */
+.slick-slider {
+    width: 100%;
+}
+
+/* Target individual slides */
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    max-height: 500px; /* Set a max height */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Dots styling */
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li button:before {
+    color: #ff6b00;
+    font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ff6b00;
+}

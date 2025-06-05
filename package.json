@@ -1,0 +1,45 @@
+{
+  "name": "my-vite-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "emailjs-com": "^3.2.0",
+    "leaflet": "^1.9.4",
+    "react": "^19.0.0",
+    "react-calendly": "^4.3.1",
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
+    "react-modal": "^3.16.3",
+    "react-responsive": "^10.0.1",
+    "react-router-dom": "^7.5.2",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.21.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "init-p": "^1.0.0",
+    "npx": "^10.2.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "vite": "^6.2.0"
+  }
+}

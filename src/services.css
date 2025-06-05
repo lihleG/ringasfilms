@@ -1,0 +1,198 @@
+.services-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+  background-color: #000;
+  overflow-x: hidden;
+}
+
+/* ====================== */
+/* HERO SECTION */
+/* ====================== */
+.services-page .services-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../assets/services-main.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.services-page .services-hero-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 165, 0, 0.3);
+  text-align: center;
+  width: 90%;
+}
+
+.services-page .services-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+  color: #ffa500; /* Orange */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.services-page .services-hero p {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #ffffff; /* White */
+  line-height: 1.6;
+}
+
+/* ====================== */
+/* SERVICES CONTENT SECTION */
+/* ====================== */
+.services-page .services-section {
+  padding: 5rem 2rem;
+  background: #000;
+}
+
+.services-page .services-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.services-page .services-intro h2 {
+  font-size: 2.5rem;
+  color: #ffa500; /* Bold Orange */
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+.services-page .services-intro h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffa500;
+  margin: 1rem auto 0;
+}
+
+.services-page .services-intro p {
+  font-size: 1.2rem;
+  color: #ffffff; /* White */
+  line-height: 1.6;
+}
+
+/* ====================== */
+/* SERVICE CARDS */
+/* ====================== */
+.services-page .cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.services-page .service-card {
+  background: #111;
+  border-left: 4px solid #ffa500;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 15px rgba(255, 165, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.services-page .service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffa500; /* Orange */
+  position: relative;
+  z-index: 1;
+}
+
+.services-page .service-card p {
+  color: #ffffff; /* White */
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* ====================== */
+/* TIMELINE SECTION */
+/* ====================== */
+.timeline-section {
+  padding: 4rem 2rem;
+  background: #111;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  color: #ffa500; /* Orange */
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-section .subtitle {
+  color: #ffffff; /* White */
+  margin-bottom: 3rem;
+}
+
+.timeline-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline-step h3 {
+  color: #ffa500; /* Orange */
+}
+
+.timeline-step p {
+  color: #ffffff; /* White */
+}
+
+/* ====================== */
+/* RESPONSIVE ADJUSTMENTS */
+/* ====================== */
+@media (max-width: 768px) {
+  .services-page .services-hero {
+    min-height: 500px;
+  }
+  
+  .services-page .services-hero-content {
+    padding: 2rem;
+    width: 85%;
+  }
+  
+  .services-page .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-page .services-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .services-page .services-hero p {
+    font-size: 1rem;
+  }
+  
+  .services-page .service-card {
+    padding: 1.5rem;
+  }
+  
+  .services-page .services-intro h2 {
+    font-size: 2rem;
+  }
+}
